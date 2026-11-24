@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-label="Hola, soy Nicole Miranda">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE6EF"/>
+      <stop offset="0.55" stop-color="#FCD5E5"/>
+      <stop offset="1" stop-color="#F1DDF6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <path id="spark" d="M0,-12 C1.8,-3 3,-1.8 12,0 C3,1.8 1.8,3 0,12 C-1.8,3 -3,1.8 -12,0 C-3,-1.8 -1.8,-3 0,-12Z"/>
+    <path id="star" d="M0,-7 L2,-2.2 7,-2.2 3,1 4.4,6.2 0,3.2 -4.4,6.2 -3,1 -7,-2.2 -2,-2.2Z"/>
+    <style>
+      .tw { transform-box: fill-box; transform-origin: center; animation: tw 2.6s ease-in-out infinite; }
+      .d1 { animation-delay: .3s } .d2 { animation-delay: .9s } .d3 { animation-delay: 1.4s }
+      .d4 { animation-delay: 1.9s } .d5 { animation-delay: 2.3s }
+      @keyframes tw { 0%,100% { opacity: .25; transform: scale(.55) rotate(0deg) } 50% { opacity: 1; transform: scale(1) rotate(20deg) } }
+      .float { animation: fl 4s ease-in-out infinite; }
+      @keyframes fl { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
+      .spin { transform-box: fill-box; transform-origin: center; animation: sp 3s linear infinite; }
+      @keyframes sp { to { transform: rotate(360deg) } }
+      .t1 { font: 600 22px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #B4567D; letter-spacing: 3px; }
+      .t2 { font: 700 62px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #6B3A52; }
+      .t3 { font: 400 21px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #7D4A63; }
+      .pill { font: 600 16px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #8A3F60; }
+    </style>
+  </defs>
+
+  <rect x="4" y="4" width="1192" height="322" rx="30" fill="url(#bg)" stroke="#F4B8CE" stroke-width="2"/>
+  <circle cx="930" cy="150" r="210" fill="url(#glow)"/>
+  <circle cx="90" cy="300" r="120" fill="#FFFFFF" opacity=".25"/>
+
+  <!-- text -->
+  <text x="70" y="92" class="t1">✦ HOLA, SOY</text>
+  <text x="66" y="160" class="t2">Nicole Miranda</text>
+  <text x="70" y="204" class="t3">Estudiante de Ingeniería de Sistemas · Universidad de la Costa (CUC)</text>
+  <g transform="translate(70 232)">
+    <rect x="0" width="150" height="38" rx="19" fill="#FFFFFF" opacity=".8"/>
+    <text x="75" y="25" text-anchor="middle" class="pill">5.º semestre</text>
+    <rect x="164" width="178" height="38" rx="19" fill="#FFFFFF" opacity=".8"/>
+    <text x="253" y="25" text-anchor="middle" class="pill">UX/UI &amp; diseño</text>
+    <rect x="356" width="124" height="38" rx="19" fill="#FFFFFF" opacity=".8"/>
+    <text x="418" y="25" text-anchor="middle" class="pill">fixie rider</text>
+    <rect x="494" width="232" height="38" rx="19" fill="#FFFFFF" opacity=".8"/>
+    <text x="610" y="25" text-anchor="middle" class="pill">aprendiendo a programar</text>
+  </g>
+
+  <!-- fixie bike -->
+  <g class="float">
+    <g transform="translate(800 92)" fill="none" stroke="#D9668F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <g class="spin"><circle cx="70" cy="140" r="58"/><path d="M70 82v116M12 140h116M29 99l82 82M111 99l-82 82" stroke-width="2" opacity=".55"/></g>
+      <g class="spin"><circle cx="290" cy="140" r="58"/><path d="M290 82v116M232 140h116M249 99l82 82M331 99l-82 82" stroke-width="2" opacity=".55"/></g>
+      <path d="M70 140 L150 140 L250 50 L130 50 Z" fill="#FFFFFF" fill-opacity=".35"/>
+      <path d="M150 140 L120 34"/>
+      <path d="M102 34 h40"/>
+      <path d="M250 50 L290 140"/>
+      <path d="M250 50 L244 22 q22 -10 34 4"/>
+      <circle cx="150" cy="140" r="12" fill="#FBE3EC"/>
+    </g>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#FFFFFF">
+    <g transform="translate(760 70)"><use href="#spark" class="tw"/></g>
+    <g transform="translate(1135 70) scale(1.4)"><use href="#spark" class="tw d2"/></g>
+    <g transform="translate(1100 285) scale(.9)"><use href="#spark" class="tw d4"/></g>
+    <g transform="translate(640 105) scale(.8)"><use href="#spark" class="tw d3"/></g>
+    <g transform="translate(985 45) scale(.7)"><use href="#spark" class="tw d1"/></g>
+  </g>
+  <g fill="#E98BAE">
+    <g transform="translate(470 70) scale(.9)"><use href="#spark" class="tw d1"/></g>
+    <g transform="translate(720 290) scale(1.1)"><use href="#spark" class="tw d5"/></g>
+    <g transform="translate(1160 180) scale(.8)"><use href="#spark" class="tw d3"/></g>
+  </g>
+  <g fill="#F7CF7E">
+    <g transform="translate(560 48)"><use href="#star" class="tw d2"/></g>
+    <g transform="translate(700 210) scale(.8)"><use href="#star" class="tw d4"/></g>
+    <g transform="translate(1060 120) scale(1.1)"><use href="#star" class="tw"/></g>
+    <g transform="translate(40 40) scale(.9)"><use href="#star" class="tw d3"/></g>
+  </g>
+</svg>

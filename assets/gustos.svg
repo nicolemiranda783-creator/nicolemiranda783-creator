@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="Mis gustos: ciclismo en fixie, leer, cocinar, hacer collage y diseño UX/UI">
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF4F8"/><stop offset="1" stop-color="#FDE3EE"/></linearGradient>
+    <path id="s" d="M0,-9 C1.4,-2.2 2.2,-1.4 9,0 C2.2,1.4 1.4,2.2 0,9 C-1.4,2.2 -2.2,1.4 -9,0 C-2.2,-1.4 -1.4,-2.2 0,-9Z"/>
+    <style>
+      .c { fill: url(#card); stroke: #F4B8CE; stroke-width: 2; }
+      .i { fill: none; stroke: #D9668F; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .h { font: 700 20px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #6B3A52; }
+      .p { font: 400 15px 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; fill: #8B5A72; }
+      .tw { transform-box: fill-box; transform-origin: center; animation: tw 2.5s ease-in-out infinite; }
+      .d1 { animation-delay: .5s } .d2 { animation-delay: 1s } .d3 { animation-delay: 1.5s } .d4 { animation-delay: 2s }
+      @keyframes tw { 0%,100% { opacity: .3; transform: scale(.6) } 50% { opacity: 1; transform: scale(1) } }
+      .spin { transform-box: fill-box; transform-origin: center; animation: sp 3s linear infinite; }
+      @keyframes sp { to { transform: rotate(360deg) } }
+      .steam { animation: st 2.2s ease-in-out infinite; }
+      @keyframes st { 0% { opacity: 0; transform: translateY(6px) } 50% { opacity: 1 } 100% { opacity: 0; transform: translateY(-8px) } }
+      .bob { animation: bob 2.8s ease-in-out infinite; }
+      @keyframes bob { 0%,100% { transform: translate(0,0) } 50% { transform: translate(4px,-4px) } }
+    </style>
+  </defs>
+
+  <!-- 1. ciclismo -->
+  <g transform="translate(10 10)">
+    <rect class="c" width="220" height="230" rx="24"/>
+    <g class="i">
+      <g class="spin"><circle cx="70" cy="100" r="26"/><path d="M70 74v52M44 100h52" stroke-width="2" opacity=".6"/></g>
+      <g class="spin"><circle cx="150" cy="100" r="26"/><path d="M150 74v52M124 100h52" stroke-width="2" opacity=".6"/></g>
+      <path d="M70 100 L105 100 L140 62 L92 62 Z M105 100 L90 50 M82 50 h18 M140 62 L150 100 M140 62 L137 50 q10 -5 16 2"/>
+    </g>
+    <text x="110" y="172" text-anchor="middle" class="h">Ciclismo</text>
+    <text x="110" y="198" text-anchor="middle" class="p">rodando en mi fixie</text>
+    <g transform="translate(196 28)" fill="#F7CF7E"><use href="#s" class="tw"/></g>
+  </g>
+
+  <!-- 2. leer -->
+  <g transform="translate(250 10)">
+    <rect class="c" width="220" height="230" rx="24"/>
+    <g class="i">
+      <path d="M110 64 C90 52 64 52 46 58 V124 C64 118 90 118 110 130 C130 118 156 118 174 124 V58 C156 52 130 52 110 64 Z" fill="#FFFFFF"/>
+      <path d="M110 64 V130"/>
+      <path d="M62 76 h30 M62 90 h30 M128 76 h30 M128 90 h30 M62 104 h22" stroke-width="2.5" opacity=".6"/>
+    </g>
+    <g transform="translate(166 46)" fill="#E98BAE"><use href="#s" class="tw d1"/></g>
+    <text x="110" y="172" text-anchor="middle" class="h">Leer</text>
+    <text x="110" y="198" text-anchor="middle" class="p">perderme en un libro</text>
+  </g>
+
+  <!-- 3. cocinar -->
+  <g transform="translate(490 10)">
+    <rect class="c" width="220" height="230" rx="24"/>
+    <g class="i">
+      <path d="M62 84 h96 v34 a20 20 0 0 1 -20 20 h-56 a20 20 0 0 1 -20 -20 Z" fill="#FFFFFF"/>
+      <path d="M62 94 h-14 M158 94 h14"/>
+      <path d="M58 84 h104"/>
+      <path d="M100 76 h20"/>
+      <g class="steam"><path d="M90 66 c-6 -8 6 -12 0 -20 M110 62 c-6 -8 6 -12 0 -20 M130 66 c-6 -8 6 -12 0 -20" stroke-width="2.5" opacity=".7"/></g>
+      <path d="M96 112 c4 6 24 6 28 0" stroke-width="2.5"/>
+      <circle cx="94" cy="104" r="1.5" fill="#D9668F"/><circle cx="126" cy="104" r="1.5" fill="#D9668F"/>
+    </g>
+    <text x="110" y="172" text-anchor="middle" class="h">Cocinar</text>
+    <text x="110" y="198" text-anchor="middle" class="p">experimentar en la cocina</text>
+    <g transform="translate(30 36)" fill="#F7CF7E"><use href="#s" class="tw d2"/></g>
+  </g>
+
+  <!-- 4. collage -->
+  <g transform="translate(730 10)">
+    <rect class="c" width="220" height="230" rx="24"/>
+    <g class="i">
+      <rect x="54" y="50" width="62" height="74" rx="4" transform="rotate(-10 85 87)" fill="#FFFFFF"/>
+      <rect x="98" y="58" width="66" height="70" rx="4" transform="rotate(8 131 93)" fill="#FBE3EC"/>
+      <path d="M118 52 l22 8" stroke="#F7CF7E" stroke-width="10" opacity=".8"/>
+      <circle cx="84" cy="80" r="9" stroke-width="3"/>
+      <path d="M70 108 l12 -12 10 8 12 -14" stroke-width="3"/>
+      <path d="M116 100 h34 M116 112 h24" stroke-width="2.5" opacity=".6"/>
+    </g>
+    <g class="bob"><g transform="translate(168 120)" fill="#E98BAE"><use href="#s" class="tw d3"/></g></g>
+    <text x="110" y="172" text-anchor="middle" class="h">Collage</text>
+    <text x="110" y="198" text-anchor="middle" class="p">recortar, combinar, crear</text>
+  </g>
+
+  <!-- 5. UX/UI -->
+  <g transform="translate(970 10)">
+    <rect class="c" width="220" height="230" rx="24"/>
+    <g class="i">
+      <rect x="44" y="48" width="132" height="88" rx="10" fill="#FFFFFF"/>
+      <path d="M44 66 h132"/>
+      <circle cx="56" cy="57" r="2" fill="#D9668F"/><circle cx="64" cy="57" r="2" fill="#D9668F"/><circle cx="72" cy="57" r="2" fill="#D9668F"/>
+      <rect x="58" y="78" width="46" height="34" rx="6" fill="#FBE3EC" stroke-width="2.5"/>
+      <path d="M114 82 h46 M114 94 h36 M114 106 h42" stroke-width="2.5" opacity=".6"/>
+    </g>
+    <g class="bob"><path d="M140 112 l0 28 8 -8 6 13 6 -3 -6 -12 11 -1 Z" fill="#FFFFFF" stroke="#6B3A52" stroke-width="2.5" stroke-linejoin="round"/></g>
+    <g transform="translate(186 40)" fill="#F7CF7E"><use href="#s" class="tw d4"/></g>
+    <text x="110" y="172" text-anchor="middle" class="h">UX/UI</text>
+    <text x="110" y="198" text-anchor="middle" class="p">diseñar para las personas</text>
+  </g>
+</svg>
